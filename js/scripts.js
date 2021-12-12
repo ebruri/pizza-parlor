@@ -3,4 +3,3 @@ function Pizza(toppings, size, crust) {
   this.size =size;
   this.crust = crust;
 }
-

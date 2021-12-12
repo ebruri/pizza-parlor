@@ -17,11 +17,11 @@ A website for a pizza company where a user can choose one or more individual top
 ## Specs
 
 ```
-Describe: pizza()
+Describe: Pizza()
 
-Test: " "
-Code: pizza();
-Expected Output: 
+Test: "It should return a Pizza object with three properties for toppings, size and crust"
+Code: const myPizza = new Pizza(["1", "2"], "medium");
+Expected Output: Pizza { toppings: ["1", "2"], size: "medium" }
 ```
 
 ```
