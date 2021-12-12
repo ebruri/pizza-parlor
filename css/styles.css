@@ -1,18 +1,26 @@
 body {
   background-color: #e5e5f7;
-  background-image: radial-gradient(#f15353 0.5px, #e5e5f7 0.5px);
+  background-image:  linear-gradient(135deg, #f9baba 25%, transparent 25%), linear-gradient(225deg, #f9baba 25%, transparent 25%), linear-gradient(45deg, #f9baba 25%, transparent 25%), linear-gradient(315deg, #f9baba 25%, #e5e5f7 25%);
+  background-position:  10px 0, 10px 0, 0 0, 0 0;
   background-size: 10px 10px;
+  background-repeat: repeat;
 }
 .container {
-  /* max-width: 1260px; 
-  position: relative; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-right: 15px; 
-  padding-left: 15px; */
-  background-color: #fcfcfc;
+  background-color: #e76e6e;
 }
 
 .card-footer {
   display: none;
+}
+
+#rotate {
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
