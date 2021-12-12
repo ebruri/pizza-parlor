@@ -11,3 +11,17 @@ Pizza.prototype.totalCost = function(){
   return result + this.size + this.crust;
 }
 
+$(document).ready(function(){
+  $("#form").submit(function(event){
+    event.preventDefault();
+    let toppings = [];
+    const size = parseInt($("#size").val());
+    const crust = parseInt($("#crust").val());
+    $("input:checkbox[name=topping]:checked").each(function(){
+      toppings.push(parseInt($(this).val()))
+    });
+    let newPizza = new Pizza(toppings, size, crust);
+    $("#price").show();
+    $("#pizza-cost").html(newPizza.totalCost());
+  });
+});
