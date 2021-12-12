@@ -21,7 +21,10 @@ $(document).ready(function(){
       toppings.push(parseInt($(this).val()))
     });
     let newPizza = new Pizza(toppings, size, crust);
-    $("#price").show();
+    $(".card-footer").show();
     $("#pizza-cost").html(newPizza.totalCost());
+    $("#size").val("");
+    $("#crust").val("");
+    $('input:checkbox').prop('checked', false);
   });
 });
