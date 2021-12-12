@@ -30,11 +30,6 @@ Code: newPizza.totalCost()
 Expected Output: 18
 ```
 
-```
-Test: 
-Code: 
-Expected Output: 
-```
 
 ## GitHub Pages
 
