@@ -25,9 +25,9 @@ Expected Output: Pizza { toppings: ["1", "2"], size: "medium" }
 ```
 
 ```
-Test: 
-Code: 
-Expected Output: 
+Test: "It should return the sum of each topping, size and crust"
+Code: newPizza.totalCost()
+Expected Output: 18
 ```
 
 ```
